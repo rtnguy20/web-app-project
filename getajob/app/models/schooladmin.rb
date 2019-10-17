@@ -1,0 +1,2 @@
+class Schooladmin < ApplicationRecord
+end
