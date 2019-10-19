@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @logging.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @logging.password %>
+</p>
+
+<%= link_to 'Edit', edit_logging_path(@logging) %> |
+<%= link_to 'Back', loggings_path %>
