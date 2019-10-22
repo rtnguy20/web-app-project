@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :company_listings
   resources :student_profiles
   resources :loggings
   resources :students
