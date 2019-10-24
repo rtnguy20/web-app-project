@@ -21,6 +21,8 @@ end
     location_state: Faker::Address.state,
     location_zip: Faker::Address.zip,
     mobile_phone_number: Faker::PhoneNumber.phone_number).save
- 
-    
+end
+#Company-listings
+10.times do |i|
+    CompanyListing.create(name: Faker::Company.name, description: Faker::Company.bs, website: Faker::Internet.url, company_image_url: Faker::Company.logo).save
 end

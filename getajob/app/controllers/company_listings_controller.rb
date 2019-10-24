@@ -69,6 +69,6 @@ class CompanyListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_listing_params
-      params.require(:company_listing).permit(:name, :description, :website)
+      params.require(:company_listing).permit(:name, :description, :website, :company_image_url)
     end
 end
