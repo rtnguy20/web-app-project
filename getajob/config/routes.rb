@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :landings
+  devise_for :users
+  resources :company_listings
+  resources :student_profiles
   resources :loggings
   resources :students
   resources :jobrecs
