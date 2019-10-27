@@ -1,2 +1,0 @@
-class Logging < ApplicationRecord
-end
