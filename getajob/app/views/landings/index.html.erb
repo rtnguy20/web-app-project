@@ -25,9 +25,15 @@
           <h3 class="masthead-brand">GetAJob</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Log-in</a>
+            <a class="nav-link" href="https://e68594511d4a48b78daaa4ae8f10e148.vfs.cloud9.us-east-2.amazonaws.com/company_listings">Jobs Catalog</a>
+            <a class="nav-link" href="https://e68594511d4a48b78daaa4ae8f10e148.vfs.cloud9.us-east-2.amazonaws.com/students">My dashboard</a>
+            <a class="nav-link">
+              <% if user_signed_in? %>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+<% else %>
+  <%= link_to('Login', new_user_session_path) %>  
+<% end %>
+            </a>
           </nav>
         </div>
       </header>
