@@ -1,3 +1,19 @@
+<%= current_user.id %>
+<%= params[:id] %>
+<%= current_user.admin %>
+
+<% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
+<div class="row">
+  <div class="col-4">
+    <div class="image-wrapper">
+      <img src="https://dummyimage.com/175x250/000/fff"/>
+    </div>
+    <div class="profile-info">
+      <h3><%= "#{@student.first_name} #{@student.last_name}" %></h3>
+      <span class="email-address"><%= @student.email_address %></span>
+    </div>
+  </div>
+</div>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -42,3 +58,7 @@
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
+
+<% else %>
+<h1> User Not Matching</h1>
+<% end %>
