@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'users/index'
+  root 'landings#index'
   resources :landings
   devise_for :users
+  resources :users, :only =>[:show]
   resources :company_listings
   resources :student_profiles
   resources :students

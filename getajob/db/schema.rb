@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191025165518) do
+ActiveRecord::Schema.define(version: 20191107001608) do
 
   create_table "company_listings", force: :cascade do |t|
     t.string   "name"
@@ -19,14 +19,19 @@ ActiveRecord::Schema.define(version: 20191025165518) do
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.string   "company_image_url"
+    t.string   "industry"
+    t.string   "tags"
+    t.string   "contact_info"
   end
 
   create_table "jobrecs", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email_address"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "associate_company"
+    t.string   "role"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -45,7 +50,12 @@ ActiveRecord::Schema.define(version: 20191025165518) do
     t.datetime "updated_at", null: false
   end
 
-  
+  create_table "loggings", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "schooladmins", force: :cascade do |t|
     t.string   "name"
@@ -76,6 +86,15 @@ ActiveRecord::Schema.define(version: 20191025165518) do
     t.string   "mobile_phone_number"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.string   "linkedin_url"
+    t.string   "twitter_url"
+    t.string   "github_url"
+    t.string   "resume1"
+    t.string   "resume2"
+    t.string   "skills"
+    t.string   "interests"
+    t.string   "category"
+    t.string   "review"
   end
 
   create_table "users", force: :cascade do |t|
