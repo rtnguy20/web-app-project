@@ -50,6 +50,9 @@ class JobrecsController < ApplicationController
       end
     end
   end
+  
+  def show
+  end
 
   # DELETE /jobrecs/1
   # DELETE /jobrecs/1.json

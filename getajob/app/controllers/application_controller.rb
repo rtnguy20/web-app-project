@@ -4,5 +4,9 @@ class ApplicationController < ActionController::Base
   def admin_user?
   current_user && current_user.admin?    
   # assuming admin is the name of your boolean field.  
-end
+  end
+  def recruiter_user?
+  current_user && current_user.recruiter?    
+  # assuming admin is the name of your boolean field.  
+  end
 end

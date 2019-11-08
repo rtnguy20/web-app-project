@@ -27,13 +27,20 @@
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="https://e68594511d4a48b78daaa4ae8f10e148.vfs.cloud9.us-east-2.amazonaws.com/company_listings">Jobs Catalog</a>
             <a class="nav-link" >
-              <% if current_user.admin  %>
+              <% if current_user.recruiter  %>
               <%= link_to('My dashboard', jobrecs_path) %>
               <% else %>
               <%= link_to('My dashboard', students_path) %>
               <% end %>
                           </a>
             <a class="nav-link" href="https://e68594511d4a48b78daaa4ae8f10e148.vfs.cloud9.us-east-2.amazonaws.com/users/edit">My account</a>
+            <a class="nav-link">
+              <% if current_user.recruiter %>
+              <%= link_to 'My profile', :controller => "jobrecs", :action => "show", :id => current_user %>
+              <% else %>
+              <%= link_to 'My profile', :controller => "students", :action => "show", :id => current_user %>
+              <% end %>
+            </a>
             <a class="nav-link">
               <% if user_signed_in? %>
   <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'users/index'
+  get 'students/show'
+  get 'jobrecs/show'
+  get 'schooladmins/show'
   root 'landings#index'
   resources :landings
   devise_for :users
