@@ -2,7 +2,7 @@
 <%= params[:id] %>
 <%= current_user.admin %>
 
-<% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
+
 <div class="row">
   <div class="col-4">
     <div class="image-wrapper">
@@ -55,7 +55,7 @@
   <strong>Mobile phone number:</strong>
   <%= @student.mobile_phone_number %>
 </p>
-
+<% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
 
