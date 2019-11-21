@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+
+<style>
+  .card{
+    margin-bottom: 100px;
+    margin-top: 0px;
+</style>
+<body class = " d-block">
+  <div class="card">
+    <div class="card-header text-center">
+      <div class="profile-info">
+          <h3><%= "#{@jobrec.first_name} #{@jobrec.last_name}" %></h3>
+          <span class="email-address"><%= @jobrec.email_address %></span>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <% if @jobrec.picture_url == "" %>
+            <img src = "https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg">
+            <% else %>
+            <img src=<%= @jobrec.picture_url %>>
+            <% end %>
+          </div>  
+        </div>
+        <div class="col-8 text-left">
+            <p>
+              <strong>First name:</strong>
+              <%= @jobrec.first_name %>
+            </p>
+            <p>
+              <strong>Last name:</strong>
+              <%= @jobrec.last_name %>
+            </p>
+            <p>
+              <strong>Email address:</strong>
+              <%= @jobrec.email_address %>
+            </p>
+            <p>
+              <strong>Associate Company:</strong>
+              <%= @jobrec.associate_company %>
+            </p>
+            <p>
+              <strong>Role:</strong>
+              <%= @jobrec.role %>
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <%= @jobrec.phone %>
+            </p>
+            <p>
+              <strong>Linkedin:</strong>
+              <%= @jobrec.linkedin_url %>
+            </p>
+            <p>
+              <strong>Available:</strong>
+              <%= @jobrec.available %>
+            </p>
+        </div>
+      </div>
+        <div class="card-footer text-center">
+        <% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
+        <%= link_to 'Edit', edit_jobrec_path(@jobrec) %> |
+        <%= link_to 'Back', jobrecs_path %>
+        <% else %>
+        <h1> User Not Matching</h1>
+        <% end %>
+        </div>
+      </div>  
+  </div>    
+</body>

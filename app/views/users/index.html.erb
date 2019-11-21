@@ -1,0 +1,27 @@
+<% if current_user.admin %>
+<body class="bg-primary">
+    <div class="container text-center font-weight-border">
+        <div class="card font-weight-border">
+            <div class="card-header text-secondary">
+              <h1>Index</h1>
+            </div>
+            <div class="card-body font-weight-border">
+              <% @users = User.all %>
+              <% @users.each do |user| %>
+                <%= user.user! %><br/>
+                <%= user.email %>
+                   | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure"} %><br>
+              <% end %>
+              </div>
+                <p>
+                <a href="#">Suspend user</a>
+                </p>
+                <p>
+                  <%= link_to "Back", jobrecs_path  %>
+                </p>
+        </div>
+    </div>
+</body>    
+<% else %>
+Access denied
+<% end %>

@@ -1,0 +1,55 @@
+<%= form_for(jobrec) do |f| %>
+  <% if jobrec.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(jobrec.errors.count, "error") %> prohibited this jobrec from being saved:</h2>
+
+      <ul>
+      <% jobrec.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email_address %>
+    <%= f.text_field :email_address %>
+  </div>
+<div class="field">
+    <%= f.label :associate_company %>
+    <%= f.text_field :associate_company %>
+  </div>
+  <div class="field">
+    <%= f.label :role %>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin_url %>
+    <%= f.text_field :linkedin_url %>
+  </div>
+  <div class="field">
+    <%= f.label :available %>
+    <%= f.text_field :available %>
+  </div>
+  <div class="field">
+    <%= f.label :picture_url %>
+    <%= f.text_field :picture_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

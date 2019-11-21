@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="landings.css" rel="stylesheet">
+    
+  <style>
+  .background {
+  
+  border: 2px solid black;
+  padding: 25px;
+  background: url(https://thewallpaper.co//wp-content/uploads/2016/03preview/black-and-white-city-houses-skyline-landscape-amazing-city-view-beautiful-place-wallpaper-free-city-photos-best-town-city-images-for-windows-large-places-background-1600x1024.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  </style>
+  </head>
+
+  <body class="text-center background">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead ">
+      <div class="row align-items-end">
+        <div class="column">
+              <% if user_signed_in? %>
+              <p>
+              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>    
+              </p>
+              <% else %>
+              <p>
+              <%= link_to('Login', new_user_session_path) %>
+              </p>
+              <% end %>
+        </div>
+      </div>
+        <div class="inner">
+          <h3 class="masthead-brand">GetAJob</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link  nav-solid-dark" href="#">Home</a>
+            <a class="nav-link" >
+            <p>
+            <%= link_to 'Job lists', company_listings_path  %></a>
+            </p>
+            <a class="nav-link" >
+            <p>
+            <%= link_to 'Contact us', contact_index_path  %></a>
+            </p>
+            <a class="nav-link" >
+              <% if current_user.recruiter || current_user.admin %>
+              <p>
+              <%= link_to('My dashboard', jobrecs_path) %>
+              </p>
+              <% else %>
+              <p>
+              <%= link_to('My dashboard', students_path) %>
+              </p>
+              <% end %>
+            </a>
+                          
+            <a class = "nav-link">
+            <p>
+            <%= link_to 'My Account',user_registration_path, method: :patch %></a> 
+            </p>
+            
+            <a class="nav-link">
+              <% if current_user.recruiter|| current_user.admin %>
+              <p>
+              <%= link_to 'My profile', :controller => "jobrecs", :action => "show", :id => current_user %>
+              </p>
+              <% else %>
+              <p>
+              <%= link_to 'My profile', :controller => "students", :action => "show", :id => current_user %>
+              </p>
+              <% end %>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Welcome to (GetAJob!)</h1>
+        <p class="lead">This app was developed to allow students and job recruiters, as well as companies to find their potential matches!</p>
+        <p class="lead">Students can find a selection of companies and jobs to apply to, and job recruiters can look up students to find their potential employees!
+        </p>
+      </main>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  
+
+</body>
+
+
+</html>

@@ -1,0 +1,124 @@
+
+<!doctype html>
+  <% if  (current_user.recruiter == false && current_user.admin == false) %>
+<html lang="en">
+
+  <head>
+    <link href="students.scss" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mr-auto mr-lg-0"><%= link_to 'Homepage', root_path %></a>
+      <div class="navbar-collapse offcanvas-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+            <%= link_to 'My profile', :controller => "students", :action => "show", :id => current_user %>
+        </ul>
+      </div>
+        <a class="nav-link"> <%= link_to('Logout', destroy_user_session_path, method: :delete) %> </a>
+    </nav>
+<style>
+  .event-item h5 {
+    font-size: 14px;
+  }
+  
+  .body-container {
+    margin-top: 300px;
+  }
+</style>
+<main role="main" class="container">
+  <div class="row body-container">
+    <div class="col justify-content-center">
+      <div class="row">
+        <div class="col-12">
+          <div class="row search-companies-container">
+            <h3>Search for Companies</h3>
+            <div class="form-container">
+              <input type="text" placeholder="Search for company Name" class="form-control"/>
+            </div>
+          </div>
+          <div class="row companies-list">
+            <div class="col-12">
+              <table class="table table-striped table-hover">
+                <theader>
+                  <tr>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Recruiter</th>
+                    <th scope="col">Options</th>
+                  </tr>
+                </theader>
+                <tbody>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                  <tr>
+                    <td>Exxon</td>
+                    <td>John Smith</td>
+                    <td><a href="#" class="btn btn-small">View Profile</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Upcoming Events</h6>
+    <div class="media text-muted pt-3">
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">UH Bauer Students Resume Review, 11/5, RSVP</strong>
+          <a href="#">Follow</a>
+        </div>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">UH Bauer Students Resume Review, 11/5, RSVP</strong>
+          <a href="#">Follow</a>
+        </div>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">UH Bauer Students Resume Review, 11/5, RSVP</strong>
+          <a href="#">Follow</a>
+        </div>
+      </div>
+    </div>
+    <small class="d-block text-right mt-3">
+      <a href="#">All suggestions</a>
+    </small>
+  </div>
+</main>
+</body>
+</html>
+<% else %>
+Access denied
+<% end %>

@@ -1,0 +1,20 @@
+<% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
+<body class="bg-primary">
+    <div class="container-expand-lg">
+        <div class="card">
+            <div class="card-header text-secondary">
+                <h1>Editing Jobrec</h1>
+            </div>
+            <div class="card-body justify-content-center">
+                <%= render 'form', jobrec: @jobrec %>
+            </div>
+            <div class="card-footer text-center">
+                <%= link_to 'Show', @jobrec %> |
+                <%= link_to 'Back', jobrecs_path %>
+            </div>
+        </div>
+    </div>    
+</body>
+<% else %>
+<h1> User Not Matching</h1>
+<% end %>

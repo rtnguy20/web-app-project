@@ -1,0 +1,2224 @@
+/* line 4, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  /* line 11, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+/* line 17, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 21, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/* line 25, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* line 29, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* line 34, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* line 37, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.dropdown {
+  padding: 20px;
+  background: blue;
+  color: white;
+  display: none;
+}
+
+/* line 44, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/company_listings.scss */
+.dropdown a {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+/* line 4, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+body {
+  font-size: .875rem;
+}
+
+/* line 8, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+/* line 18, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 28, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports (position: -webkit-sticky) or (position: sticky) {
+  /* line 38, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+/* line 44, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+/* line 49, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+/* line 54, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+/* line 58, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+/* line 63, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+/* line 72, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+[role="main"] {
+  padding-top: 133px;
+  /* Space for fixed navbar */
+}
+
+@media (min-width: 768px) {
+  /* line 77, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+  [role="main"] {
+    padding-top: 48px;
+    /* Space for fixed navbar */
+  }
+}
+/*
+ * Navbar
+ */
+/* line 86, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 94, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+/* line 100, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 106, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/jobrecs.scss */
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+/*
+ * Globals
+ */
+/* Links */
+/* line 10, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+a,
+a:focus,
+a:hover {
+  color: #333;
+}
+
+/* Custom default button */
+/* line 17, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+/*
+ * Base structure
+ */
+/* line 31, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+/* line 37, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #333;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.1);
+}
+
+/* line 49, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Header
+ */
+/* line 57, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+/* line 61, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+/* line 65, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+/* line 73, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 78, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+/* line 82, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  /* line 88, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+  .masthead-brand {
+    float: left;
+  }
+
+  /* line 91, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+  .nav-masthead {
+    float: right;
+  }
+}
+/*
+ * Cover
+ */
+/* line 100, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.cover {
+  padding: 0 1.5rem;
+}
+
+/* line 103, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+/* line 112, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/landings.scss */
+.mastfoot {
+  color: rgba(0, 0, 0, 0.5);
+}
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* line 6, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+}
+
+/* line 14, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  background: rgba(25, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 20px rgba(25, 0, 0, 0.5);
+}
+/* line 24, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  padding: 12px 0;
+}
+/* line 30, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field {
+  position: relative;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  margin: 20px 0 8px 0;
+  transition: 0.4s;
+}
+/* line 37, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background: #3498db;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.4s ease;
+}
+/* line 50, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field:focus-within::after {
+  transform: scaleX(1);
+}
+/* line 54, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding-left: 10px;
+}
+/* line 64, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field input:focus ~ label, .login-form .form-field input:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 15px;
+}
+/* line 70, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field input:valid ~ label {
+  color: #3498db;
+}
+/* line 74, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field input:invalid ~ label {
+  color: #e74c3c;
+}
+/* line 79, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .form-field label {
+  position: absolute;
+  left: 32px;
+  top: 24px;
+  transition: 0.4s;
+}
+/* line 87, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .btn {
+  position: relative;
+  outline: none;
+  background: transparent;
+  color: white;
+  border: 2px solid #3398db;
+  width: 100%;
+  font-size: 1.2em;
+  margin: 36px 0 18px 0;
+  padding: 6px 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* line 101, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(120deg, transparent, rgba(51, 152, 219, 0.5), transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+/* line 118, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .btn:hover {
+  box-shadow: 0 0 20px 10px rgba(51, 152, 219, 0.5);
+}
+/* line 122, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/login.scss */
+.login-form .btn:hover::before {
+  transform: translateX(100%);
+}
+/* line 1, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+body {
+  margin-top: 20px;
+}
+
+/* line 6, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.align-center, .center {
+  text-align: center !important;
+}
+
+/* line 10, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-user-info {
+  display: table;
+  width: 98%;
+  width: calc(100% - 24px);
+  margin: 0 auto;
+}
+
+/* line 17, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-row {
+  display: table-row;
+}
+
+/* line 21, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-name,
+.profile-info-value {
+  display: table-cell;
+  border-top: 1px dotted #D5E4F1;
+}
+
+/* line 27, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-name {
+  text-align: right;
+  padding: 6px 10px 6px 4px;
+  font-weight: 400;
+  color: #667E99;
+  background-color: transparent;
+  width: 110px;
+  vertical-align: middle;
+}
+
+/* line 37, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-value {
+  padding: 6px 4px 6px 6px;
+}
+
+/* line 41, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-value > span + span:before {
+  display: inline;
+  content: ",";
+  margin-left: 1px;
+  margin-right: 3px;
+  color: #666;
+  border-bottom: 1px solid #FFF;
+}
+
+/* line 50, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-value > span + span.editable-container:before {
+  display: none;
+}
+
+/* line 54, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-info-row:first-child .profile-info-name,
+.profile-info-row:first-child .profile-info-value {
+  border-top: none;
+}
+
+/* line 59, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-user-info-striped {
+  border: 1px solid #DCEBF7;
+}
+
+/* line 63, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-user-info-striped .profile-info-name {
+  color: #336199;
+  background-color: #EDF3F4;
+  border-top: 1px solid #F7FBFF;
+}
+
+/* line 69, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-user-info-striped .profile-info-value {
+  border-top: 1px dotted #DCEBF7;
+  padding-left: 12px;
+}
+
+/* line 74, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-picture {
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  padding: 4px;
+  display: inline-block;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* line 86, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.dd-empty,
+.dd-handle,
+.dd-placeholder,
+.dd2-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 94, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity {
+  padding: 10px 4px;
+  border-bottom: 1px dotted #D0D8E0;
+  position: relative;
+  border-left: 1px dotted #FFF;
+  border-right: 1px dotted #FFF;
+}
+
+/* line 102, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity:first-child {
+  border-top: 1px dotted transparent;
+}
+
+/* line 106, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity:first-child:hover {
+  border-top-color: #D0D8E0;
+}
+
+/* line 110, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity:hover {
+  background-color: #F4F9FD;
+  border-left: 1px dotted #D0D8E0;
+  border-right: 1px dotted #D0D8E0;
+}
+
+/* line 116, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity img {
+  border: 2px solid #C9D6E5;
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+  margin-left: 0;
+  box-shadow: none;
+}
+
+/* line 125, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity .thumbicon {
+  background-color: #74ABD7;
+  display: inline-block;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  line-height: 38px;
+  margin-right: 10px;
+  margin-left: 0;
+  text-shadow: none !important;
+}
+
+/* line 140, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity .time {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+}
+
+/* line 146, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity a.user {
+  font-weight: 700;
+  color: #9585BF;
+}
+
+/* line 151, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity .tools {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  display: none;
+}
+
+/* line 158, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-activity:hover .tools {
+  display: block;
+}
+
+/* line 162, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-profile .ace-thumbnails li {
+  border: 1px solid #CCC;
+  padding: 3px;
+  margin: 6px;
+}
+
+/* line 168, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-profile .ace-thumbnails li .tools {
+  left: 3px;
+  right: 3px;
+}
+
+/* line 173, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-profile .ace-thumbnails li:hover .tools {
+  bottom: 3px;
+}
+
+/* line 177, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-title-label:hover {
+  text-decoration: none;
+}
+
+/* line 181, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-title-label + .dropdown-menu {
+  margin-left: -12px;
+}
+
+/* line 185, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-contact-links {
+  padding: 4px 2px 5px;
+  border: 1px solid #E0E2E5;
+  background-color: #F8FAFC;
+}
+
+/* line 191, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.btn-link:hover .ace-icon {
+  text-decoration: none !important;
+}
+
+/* line 195, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-social-links > a:hover > .ace-icon,
+.profile-users .memberdiv .name a:hover .ace-icon,
+.profile-users .memberdiv .tools > a:hover {
+  text-decoration: none;
+}
+
+/* line 201, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-social-links > a {
+  text-decoration: none;
+  margin: 0 1px;
+}
+
+/* line 206, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-skills .progress {
+  height: 26px;
+  margin-bottom: 2px;
+  background-color: transparent;
+}
+
+/* line 212, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-skills .progress .progress-bar {
+  line-height: 26px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  padding: 0 8px;
+}
+
+/* line 220, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .user {
+  display: block;
+  position: static;
+  text-align: center;
+  width: auto;
+}
+
+/* line 227, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .user img {
+  padding: 2px;
+  border-radius: 100%;
+  border: 1px solid #AAA;
+  max-width: none;
+  width: 64px;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all 0.1s;
+}
+
+/* line 238, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .user img:hover {
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+/* line 243, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv {
+  background-color: #FFF;
+  width: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  margin: 0 8px 24px;
+}
+
+/* line 254, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .body {
+  display: inline-block;
+  margin: 8px 0 0;
+}
+
+/* line 259, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .popover {
+  visibility: hidden;
+  min-width: 0;
+  max-height: 0;
+  max-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  top: -5%;
+  left: auto;
+  right: auto;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  -webkit-transition: opacity .2s linear 0s, visibility 0s linear .2s, max-height 0s linear .2s, max-width 0s linear .2s, min-width 0s linear .2s;
+  -o-transition: opacity .2s linear 0s, visibility 0s linear .2s, max-height 0s linear .2s, max-width 0s linear .2s, min-width 0s linear .2s;
+  transition: opacity 0.2s linear 0s, visibility 0s linear 0.2s, max-height 0s linear 0.2s, max-width 0s linear 0.2s, min-width 0s linear 0.2s;
+}
+
+/* line 277, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .popover.right {
+  left: 100%;
+  right: auto;
+  display: block;
+}
+
+/* line 283, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .popover.left {
+  left: auto;
+  right: 100%;
+  display: block;
+}
+
+/* line 289, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv > :first-child:hover .popover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1060;
+  max-height: 250px;
+  max-width: 250px;
+  min-width: 150px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* line 302, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .tools {
+  position: static;
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+}
+
+/* line 309, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.profile-users .memberdiv .tools > a {
+  margin: 0 2px;
+}
+
+/* line 313, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-status {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-color: #FFF;
+  border: 3px solid #AAA;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+
+/* line 324, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-status.status-online {
+  border-color: #8AC16C;
+}
+
+/* line 328, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-status.status-busy {
+  border-color: #E07F69;
+}
+
+/* line 332, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.user-status.status-idle {
+  border-color: #FFB752;
+}
+
+/* line 336, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.profile-edit-tab-content {
+  border: 1px solid #DDD;
+  padding: 8px 32px 32px;
+  -webkit-box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 345, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .profile-info-name {
+    width: 80px;
+  }
+
+  /* line 348, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .profile-user-info-striped .profile-info-name {
+    float: none;
+    width: auto;
+    text-align: left;
+    padding: 6px 4px 6px 10px;
+    display: block;
+  }
+
+  /* line 355, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .profile-user-info-striped .profile-info-value {
+    margin-left: 10px;
+    display: block;
+  }
+
+  /* line 359, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .user-profile .memberdiv {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 368, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv {
+  padding-right: 3px;
+  min-height: 66px;
+}
+
+/* line 373, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .user {
+  display: inline-block;
+  width: 42px;
+  position: absolute;
+  left: 0;
+}
+
+/* line 380, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .user > .img,
+.itemdiv > .user > img {
+  border-radius: 100%;
+  border: 2px solid #5293C4;
+  max-width: 40px;
+  position: relative;
+}
+
+/* line 388, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .user > .img {
+  padding: 2px;
+}
+
+/* line 392, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body {
+  width: auto;
+  margin-left: 50px;
+  margin-right: 12px;
+  position: relative;
+}
+
+/* line 399, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .time {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  position: absolute;
+  right: 9px;
+  top: 0;
+}
+
+/* line 409, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .time .ace-icon {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 414, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .name {
+  display: block;
+  color: #999;
+}
+
+/* line 419, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .name > b {
+  color: #777;
+}
+
+/* line 423, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .text {
+  display: block;
+  position: relative;
+  margin-top: 2px;
+  padding-bottom: 19px;
+  padding-left: 7px;
+  font-size: 13px;
+}
+
+/* line 432, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv:before,
+.itemdiv.dialogdiv > .body:before,
+.itemdiv > .body > .text:after {
+  content: "";
+  position: absolute;
+}
+
+/* line 439, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .text:after {
+  display: block;
+  height: 1px;
+  font-size: 0;
+  overflow: hidden;
+  left: 16px;
+  right: -12px;
+  margin-top: 9px;
+  border-top: 1px solid #E4ECF3;
+}
+
+/* line 450, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv > .body > .text > .ace-icon:first-child {
+  color: #DCE3ED;
+  margin-right: 4px;
+}
+
+/* line 455, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv:last-child > .body > .text {
+  border-bottom-width: 0;
+}
+
+/* line 459, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv:last-child > .body > .text:after {
+  display: none;
+}
+
+/* line 463, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv {
+  padding-bottom: 14px;
+}
+
+/* line 467, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv:before {
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  width: 3px;
+  max-width: 3px;
+  background-color: #E1E6ED;
+  border: 1px solid #D7DBDD;
+  border-width: 0 1px;
+}
+
+/* line 479, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv:last-child {
+  padding-bottom: 0;
+}
+
+/* line 483, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv:last-child:before {
+  display: none;
+}
+
+/* line 487, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .user > img {
+  border-color: #C9D6E5;
+}
+
+/* line 491, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .body {
+  border: 1px solid #DDE4ED;
+  padding: 5px 8px 8px;
+  border-left-width: 2px;
+  margin-right: 1px;
+}
+
+/* line 498, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .body:before {
+  display: block;
+  left: -7px;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #DDE4ED;
+  border-width: 2px 0 0 2px;
+  background-color: #FFF;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 516, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .body > .time {
+  position: static;
+  float: right;
+}
+
+/* line 521, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .body > .text {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+/* line 526, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv > .body > .text:after {
+  display: none;
+}
+
+/* line 530, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.dialogdiv .tooltip-inner {
+  word-break: break-all;
+}
+
+/* line 534, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.memberdiv {
+  width: 175px;
+  padding: 2px;
+  margin: 3px 0;
+  float: left;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+@media (min-width: 992px) {
+  /* line 543, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .itemdiv.memberdiv {
+    max-width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 549, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .itemdiv.memberdiv {
+    min-width: 33.333%;
+  }
+}
+/* line 554, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.memberdiv > .user > img {
+  border-color: #DCE3ED;
+}
+
+/* line 558, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.memberdiv > .body > .time {
+  position: static;
+}
+
+/* line 562, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.memberdiv > .body > .name {
+  line-height: 18px;
+  height: 18px;
+  margin-bottom: 0;
+}
+
+/* line 568, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.memberdiv > .body > .name > a {
+  display: inline-block;
+  max-width: 100px;
+  max-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+/* line 577, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv .tools {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  display: none;
+}
+
+/* line 584, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li > .checkbox,
+.item-list > li > label.inline,
+.itemdiv:hover .tools {
+  display: inline-block;
+}
+
+/* line 590, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv .tools .btn {
+  border-radius: 36px;
+  margin: 1px 0;
+}
+
+/* line 595, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv .body .tools {
+  bottom: 4px;
+}
+
+/* line 599, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.itemdiv.commentdiv .tools {
+  right: 9px;
+}
+
+/* line 603, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 609, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li {
+  padding: 9px;
+  background-color: #FFF;
+  margin-top: -1px;
+  position: relative;
+}
+
+/* line 616, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li.selected {
+  color: #8090A0;
+  background-color: #F4F9FC;
+}
+
+/* line 621, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li.selected .lbl,
+.item-list > li.selected label {
+  text-decoration: line-through;
+  color: #8090A0;
+}
+
+/* line 627, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li label {
+  font-size: 13px;
+}
+
+/* line 631, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.item-list > li .percentage {
+  font-size: 11px;
+  font-weight: 700;
+  color: #777;
+}
+
+/* line 638, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li,
+.ace-thumbnails > li > :first-child {
+  display: block;
+  position: relative;
+}
+
+/* line 644, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 650, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li {
+  float: left;
+  overflow: hidden;
+  margin: 2px;
+  border: 2px solid #333;
+}
+
+/* line 657, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > :first-child:focus {
+  outline: 0;
+}
+
+/* line 661, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li .tags {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: visible;
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  border-width: 0;
+  vertical-align: inherit;
+}
+
+/* line 677, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li .tags > .label-holder {
+  opacity: .92;
+  filter: alpha(opacity=92);
+  display: table;
+  margin: 1px 0 0;
+  direction: ltr;
+  text-align: left;
+}
+
+/* line 686, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools,
+.ace-thumbnails > li > :first-child > .text {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* line 693, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li .tags > .label-holder:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 698, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools {
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: 24px;
+  vertical-align: middle;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 709, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools.tools-right {
+  left: auto;
+  right: -30px;
+}
+
+/* line 714, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools.tools-bottom {
+  width: auto;
+  height: 28px;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: -30px;
+}
+
+/* line 723, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools.tools-top {
+  width: auto;
+  height: 28px;
+  left: 0;
+  right: 0;
+  top: -30px;
+  bottom: auto;
+}
+
+/* line 732, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li:hover > .tools {
+  left: 0;
+  right: 0;
+}
+
+/* line 737, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li:hover > .tools.tools-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+/* line 742, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li:hover > .tools.tools-top {
+  bottom: auto;
+  top: 0;
+}
+
+/* line 747, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li:hover > .tools.tools-right {
+  left: auto;
+  right: 0;
+}
+
+/* line 752, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .in.tools {
+  left: 0;
+  right: 0;
+}
+
+/* line 757, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .in.tools.tools-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+/* line 762, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .in.tools.tools-top {
+  bottom: auto;
+  top: 0;
+}
+
+/* line 767, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .in.tools.tools-right {
+  left: auto;
+  right: 0;
+}
+
+/* line 772, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools > a,
+.ace-thumbnails > li > :first-child .inner a {
+  display: inline-block;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 4px;
+}
+
+/* line 781, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > .tools > a:hover,
+.ace-thumbnails > li > :first-child .inner a:hover {
+  text-decoration: none;
+  color: #C9E2EA;
+}
+
+/* line 787, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li .tools.tools-bottom > a,
+.ace-thumbnails > li .tools.tools-top > a {
+  display: inline-block;
+}
+
+/* line 792, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > :first-child > .text {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 805, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.dialogs,
+.itemdiv {
+  position: relative;
+}
+
+/* line 810, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > :first-child > .text:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+/* line 818, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li > :first-child > .text > .inner {
+  padding: 4px 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 90%;
+}
+
+/* line 826, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.ace-thumbnails > li:hover > :first-child > .text {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 832, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .ace-thumbnails {
+    text-align: center;
+  }
+
+  /* line 835, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+  .ace-thumbnails > li {
+    float: none;
+    display: inline-block;
+  }
+}
+/* line 842, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content {
+  border: 1px solid #C5D0DC;
+  padding: 16px 12px;
+  position: relative;
+}
+
+/* line 848, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-padding {
+  padding: 0;
+}
+
+/* line 852, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border {
+  border: none;
+  padding: 12px;
+}
+
+/* line 857, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-32 {
+  padding: 32px 24px;
+}
+
+/* line 861, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-32 {
+  padding: 32px;
+}
+
+/* line 865, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-30 {
+  padding: 30px 23px;
+}
+
+/* line 869, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-30 {
+  padding: 30px;
+}
+
+/* line 873, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-28 {
+  padding: 28px 21px;
+}
+
+/* line 877, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-28 {
+  padding: 28px;
+}
+
+/* line 881, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-26 {
+  padding: 26px 20px;
+}
+
+/* line 885, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-26 {
+  padding: 26px;
+}
+
+/* line 889, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-24 {
+  padding: 24px 18px;
+}
+
+/* line 893, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-24 {
+  padding: 24px;
+}
+
+/* line 897, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-22 {
+  padding: 22px 17px;
+}
+
+/* line 901, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-22 {
+  padding: 22px;
+}
+
+/* line 905, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-20 {
+  padding: 20px 15px;
+}
+
+/* line 909, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-20 {
+  padding: 20px;
+}
+
+/* line 913, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-18 {
+  padding: 18px 14px;
+}
+
+/* line 917, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-18 {
+  padding: 18px;
+}
+
+/* line 921, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-16 {
+  padding: 16px 12px;
+}
+
+/* line 925, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-16 {
+  padding: 16px;
+}
+
+/* line 929, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-14 {
+  padding: 14px 11px;
+}
+
+/* line 933, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-14 {
+  padding: 14px;
+}
+
+/* line 937, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-12 {
+  padding: 12px 9px;
+}
+
+/* line 941, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-12 {
+  padding: 12px;
+}
+
+/* line 945, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-10 {
+  padding: 10px 8px;
+}
+
+/* line 949, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-10 {
+  padding: 10px;
+}
+
+/* line 953, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-8 {
+  padding: 8px 6px;
+}
+
+/* line 957, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-8 {
+  padding: 8px;
+}
+
+/* line 961, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-6 {
+  padding: 6px 5px;
+}
+
+/* line 965, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-6 {
+  padding: 6px;
+}
+
+/* line 969, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.padding-4 {
+  padding: 4px 3px;
+}
+
+/* line 973, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-4 {
+  padding: 4px;
+}
+
+/* line 977, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-2,
+.tab-content.padding-2 {
+  padding: 2px;
+}
+
+/* line 982, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tab-content.no-border.padding-0,
+.tab-content.padding-0 {
+  padding: 0;
+}
+
+/* line 988, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-28 {
+  padding-left: 28px;
+}
+
+/* line 992, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-28,
+.tabs-right > .nav.nav-tabs.padding-28 {
+  padding-left: 0;
+  padding-top: 28px;
+}
+
+/* line 998, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-26 {
+  padding-left: 26px;
+}
+
+/* line 1002, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-26,
+.tabs-right > .nav.nav-tabs.padding-26 {
+  padding-left: 0;
+  padding-top: 26px;
+}
+
+/* line 1008, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-24 {
+  padding-left: 24px;
+}
+
+/* line 1012, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-24,
+.tabs-right > .nav.nav-tabs.padding-24 {
+  padding-left: 0;
+  padding-top: 24px;
+}
+
+/* line 1018, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-22 {
+  padding-left: 22px;
+}
+
+/* line 1022, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-22,
+.tabs-right > .nav.nav-tabs.padding-22 {
+  padding-left: 0;
+  padding-top: 22px;
+}
+
+/* line 1028, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-20 {
+  padding-left: 20px;
+}
+
+/* line 1032, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-20,
+.tabs-right > .nav.nav-tabs.padding-20 {
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+/* line 1038, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-18 {
+  padding-left: 18px;
+}
+
+/* line 1042, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-18,
+.tabs-right > .nav.nav-tabs.padding-18 {
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+/* line 1048, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-16 {
+  padding-left: 16px;
+}
+
+/* line 1052, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-16,
+.tabs-right > .nav.nav-tabs.padding-16 {
+  padding-left: 0;
+  padding-top: 16px;
+}
+
+/* line 1058, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-14 {
+  padding-left: 14px;
+}
+
+/* line 1062, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-14,
+.tabs-right > .nav.nav-tabs.padding-14 {
+  padding-left: 0;
+  padding-top: 14px;
+}
+
+/* line 1068, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-12 {
+  padding-left: 12px;
+}
+
+/* line 1072, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-12,
+.tabs-right > .nav.nav-tabs.padding-12 {
+  padding-left: 0;
+  padding-top: 12px;
+}
+
+/* line 1078, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-10 {
+  padding-left: 10px;
+}
+
+/* line 1082, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-10,
+.tabs-right > .nav.nav-tabs.padding-10 {
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+/* line 1088, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-8 {
+  padding-left: 8px;
+}
+
+/* line 1092, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-8,
+.tabs-right > .nav.nav-tabs.padding-8 {
+  padding-left: 0;
+  padding-top: 8px;
+}
+
+/* line 1098, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-6 {
+  padding-left: 6px;
+}
+
+/* line 1102, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-6,
+.tabs-right > .nav.nav-tabs.padding-6 {
+  padding-left: 0;
+  padding-top: 6px;
+}
+
+/* line 1108, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-4 {
+  padding-left: 4px;
+}
+
+/* line 1112, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-4,
+.tabs-right > .nav.nav-tabs.padding-4 {
+  padding-left: 0;
+  padding-top: 4px;
+}
+
+/* line 1118, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav.nav-tabs.padding-2 {
+  padding-left: 2px;
+}
+
+/* line 1122, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav.nav-tabs.padding-2,
+.tabs-right > .nav.nav-tabs.padding-2 {
+  padding-left: 0;
+  padding-top: 2px;
+}
+
+/* line 1128, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs {
+  border-color: #C5D0DC;
+  margin-bottom: 0 !important;
+  position: relative;
+  top: 1px;
+}
+
+/* line 1135, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a {
+  padding: 7px 12px 8px;
+}
+
+/* line 1139, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a,
+.nav-tabs > li > a:focus {
+  border-radius: 0 !important;
+  border-color: #C5D0DC;
+  background-color: #F9F9F9;
+  color: #999;
+  margin-right: -1px;
+  line-height: 18px;
+  position: relative;
+}
+
+/* line 1150, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a:hover {
+  background-color: #FFF;
+  color: #4C8FBD;
+  border-color: #C5D0DC;
+}
+
+/* line 1156, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a:active,
+.nav-tabs > li > a:focus {
+  outline: 0 !important;
+}
+
+/* line 1161, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #576373;
+  border-color: #C5D0DC #C5D0DC transparent;
+  border-top: 2px solid #4C8FBD;
+  background-color: #FFF;
+  z-index: 1;
+  line-height: 18px;
+  margin-top: -1px;
+  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 1174, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-below > .nav-tabs {
+  top: auto;
+  margin-bottom: 0;
+  margin-top: -1px;
+  border-color: #C5D0DC;
+  border-bottom-width: 0;
+}
+
+/* line 1182, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-below > .nav-tabs > li > a,
+.tabs-below > .nav-tabs > li > a:focus,
+.tabs-below > .nav-tabs > li > a:hover {
+  border-color: #C5D0DC;
+}
+
+/* line 1188, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-below > .nav-tabs > li.active > a,
+.tabs-below > .nav-tabs > li.active > a:focus,
+.tabs-below > .nav-tabs > li.active > a:hover {
+  border-color: transparent #C5D0DC #C5D0DC;
+  border-top-width: 1px;
+  border-bottom: 2px solid #4C8FBD;
+  margin-top: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 1198, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 60px;
+}
+
+/* line 1203, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav-tabs {
+  top: auto;
+  margin-bottom: 0;
+  border-color: #C5D0DC;
+  float: left;
+}
+
+/* line 1210, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav-tabs > li {
+  float: none !important;
+}
+
+/* line 1214, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav-tabs > li > a,
+.tabs-left > .nav-tabs > li > a:focus,
+.tabs-left > .nav-tabs > li > a:hover {
+  border-color: #C5D0DC;
+  margin: 0 -1px 0 0;
+}
+
+/* line 1221, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left > .nav-tabs > li.active > a,
+.tabs-left > .nav-tabs > li.active > a:focus,
+.tabs-left > .nav-tabs > li.active > a:hover {
+  border-color: #C5D0DC transparent #C5D0DC #C5D0DC;
+  border-top-width: 1px;
+  border-left: 2px solid #4C8FBD;
+  margin: 0 -1px;
+  -webkit-box-shadow: -2px 0 3px 0 rgba(0, 0, 0, 0.15) !important;
+  box-shadow: -2px 0 3px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+/* line 1232, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-right > .nav-tabs {
+  top: auto;
+  margin-bottom: 0;
+  border-color: #C5D0DC;
+  float: right;
+}
+
+/* line 1239, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-right > .nav-tabs > li {
+  float: none !important;
+}
+
+/* line 1243, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-right > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a:focus,
+.tabs-right > .nav-tabs > li > a:hover {
+  border-color: #C5D0DC;
+  margin: 0 -1px;
+}
+
+/* line 1250, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-right > .nav-tabs > li.active > a,
+.tabs-right > .nav-tabs > li.active > a:focus,
+.tabs-right > .nav-tabs > li.active > a:hover {
+  border-color: #C5D0DC #C5D0DC #C5D0DC transparent;
+  border-top-width: 1px;
+  border-right: 2px solid #4C8FBD;
+  margin: 0 -2px 0 -1px;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 1261, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a .badge {
+  padding: 1px 5px;
+  line-height: 15px;
+  opacity: .75;
+  vertical-align: initial;
+}
+
+/* line 1268, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li > a .ace-icon {
+  opacity: 0.75;
+}
+
+/* line 1272, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li.active > a .ace-icon,
+.nav-tabs > li.active > a .badge {
+  opacity: 1;
+}
+
+/* line 1277, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs li .ace-icon {
+  width: 1.25em;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 1283, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li.open .dropdown-toggle {
+  background-color: #4F99C6;
+  border-color: #4F99C6;
+  color: #FFF;
+}
+
+/* line 1289, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.nav-tabs > li.open .dropdown-toggle > .ace-icon {
+  color: #FFF !important;
+}
+
+/* line 1293, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.tabs-left .tab-content,
+.tabs-right .tab-content {
+  overflow: auto;
+}
+
+/* line 1298, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.dark {
+  color: #333 !important;
+}
+
+/* line 1302, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.white {
+  color: #FFF !important;
+}
+
+/* line 1306, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.red {
+  color: #DD5A43 !important;
+}
+
+/* line 1310, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.red2 {
+  color: #E08374 !important;
+}
+
+/* line 1314, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.light-red {
+  color: #F77 !important;
+}
+
+/* line 1318, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.blue {
+  color: #478FCA !important;
+}
+
+/* line 1322, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.light-blue {
+  color: #93CBF9 !important;
+}
+
+/* line 1326, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.green {
+  color: #69AA46 !important;
+}
+
+/* line 1330, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.light-green {
+  color: #B0D877 !important;
+}
+
+/* line 1334, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.orange {
+  color: #FF892A !important;
+}
+
+/* line 1338, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.orange2 {
+  color: #FEB902 !important;
+}
+
+/* line 1342, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.light-orange {
+  color: #FCAC6F !important;
+}
+
+/* line 1346, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.purple {
+  color: #A069C3 !important;
+}
+
+/* line 1350, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.pink {
+  color: #C6699F !important;
+}
+
+/* line 1354, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.pink2 {
+  color: #D6487E !important;
+}
+
+/* line 1358, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.brown {
+  color: brown !important;
+}
+
+/* line 1362, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/student_profiles.scss */
+.grey {
+  color: #777 !important;
+}
+/* line 4, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* line 9, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+body {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  /* line 14, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+
+  /* line 29, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+/* line 36, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+/* line 43, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 57, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+/* line 64, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+/* line 68, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+/* line 73, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 75, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+/* line 77, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.lh-100 {
+  line-height: 1;
+}
+
+/* line 78, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.lh-125 {
+  line-height: 1.25;
+}
+
+/* line 79, /home/ubuntu/environment/web-app-project/getajob/app/assets/stylesheets/students.scss */
+.lh-150 {
+  line-height: 1.5;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+

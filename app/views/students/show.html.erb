@@ -1,0 +1,130 @@
+<%= current_user.id %>
+<%= params[:id] %>
+<%= current_user.admin %>
+<style>
+  .body{
+    margin-top: auto;
+    padding-top: 56px;
+  }
+</style>
+<body class = "d-block">
+  <div class="card justify-content-center text-center">
+      <div class="card-header">
+        <div class="profile-info">
+          <h3><%= "#{@student.first_name} #{@student.last_name}" %></h3>
+          <span class="email-address"><%= @student.email_address %></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4">
+            <div class="card card-sm text-left">
+            <% if @student.picture_url == "" %>
+            <img src = "https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg">
+            <% else %>
+            <img src=<%= @student.picture_url %>>
+            <% end %>
+          </div>
+          </div>
+          <div class="col-8 text-left">
+            <p id="notice"><%= notice %></p>
+            <p>
+            <strong>First name:</strong>
+            <%= @student.first_name %>
+            </p>
+            <p>
+            <strong>Last name:</strong>
+            <%= @student.last_name %>
+            </p>
+            <p>
+            <strong>Email address:</strong>
+            <%= @student.email_address %>
+            </p>
+            <p>
+            <strong>Location address:</strong>
+            <%= @student.location_address %>
+            </p>
+            <p>
+            <strong>Location city:</strong>
+            <%= @student.location_city %>
+            </p>
+            <p>
+            <strong>Location state:</strong>
+            <%= @student.location_state %>
+            </p>
+            <p>
+              <strong>Location zip:</strong>
+              <%= @student.location_zip %>
+            </p>
+            <p>
+              <strong>Mobile phone number:</strong>
+              <%= @student.mobile_phone_number %>
+            </p>
+            <p>
+            <strong>Linkedin:</strong>
+              <%= @student.linkedin_url %>
+            </p>
+            <p>
+            <strong>Twitter:</strong>
+              <%= @student.twitter_url %>
+            </p>
+            <p>
+            <strong>Github:</strong>
+              <%= @student.github_url %>
+            </p>
+            <p>
+            <strong>Resume1:</strong>
+             <a href= "#"><%= @student.resume1 %></a>
+            </p>
+            <p>
+            <strong>Resume2:</strong>
+             <a href= "#"><%= @student.resume2 %></a>
+            </p>
+            <p>
+            <strong>Skills:</strong>
+            <%= @student.skills %>
+            </p>
+            <p>
+            <strong>Interests:</strong>
+            <%= @student.interests %>
+            </p>
+            <p>
+            <strong>Category:</strong>
+            <%= @student.category %>
+            </p>
+            <p>
+            <strong>Reviews:</strong>
+            <%= @student.review %>
+            </p>
+            <p>
+            <strong>Rating:</strong>
+            <%= @student.rating %>
+            </p>
+            <p>
+              <% if current_user %>
+              <p>
+                Visual Effects: <%= rating_for @student, "visual_effects" %>
+              </p>
+              <p>
+                Original Score: <%= rating_for @student, "original_score" %>
+              </p>
+              <p>
+                Director: <%= rating_for @student, "original_score" %>
+              </p>
+              <p>
+                Custome Design: <%= rating_for @student, "custome_design" %>
+              </p>  
+              <% end %>
+              <% if  (current_user.id.to_s == params[:id].to_s) || (current_user.admin == true)  %>
+              <%= link_to 'Edit', edit_student_path(@student) %> |
+              <%= link_to 'Back', students_path %>
+              </p>
+            </div>  
+        </div>
+      </div>    
+  </div>
+</div>
+</body>
+<% else %>
+<h1> User Not Matching</h1>
+<% end %>
